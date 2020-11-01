@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5615e0f847.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="main-wrapper-background">
+        <div class="container">
+          <form class="form col-12">
+            <input
+              type="text"
+              placeholder="Enter something..."
+              class="input-text"
+            />
+            <button class="btn-submit"><i class="fas fa-plus"></i></button>
+          </form>
+          <hr />
+          <div class="active-task">
+            <h3>Active task:</h3>
+            <ul class="active-list"></ul>
+          </div>
+          <div class="done-task">
+            <h3>Done task:</h3>
+            <ul class="done-list">
+              <li class="done-list_item col-12 m-auto" id="${task.id}">
+                Done task
+                <span class="btn-group-control">
+                  <i class="fas fa-check"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
